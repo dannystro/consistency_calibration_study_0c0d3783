@@ -1,4 +1,4 @@
-# consistency_calibration_study_0c0d3783
+# multiimage_order_confusion_calibration
 
 （多图输入的顺序混淆场景）多图输入的顺序混淆的提升到底来自方法本身还是来自基线选择？用口径一致性比对做同输入的对照。
 
@@ -15,9 +15,9 @@
 仅依赖 Python 标准库。
 
 ```bash
-python consistency_calibration_study_0c0d3783.py --help
-python consistency_calibration_study_0c0d3783.py --input sample.txt
-python consistency_calibration_study_0c0d3783.py --input sample.txt --json
+python multiimage_order_confusion_calibration.py --help
+python multiimage_order_confusion_calibration.py --input sample.txt
+python multiimage_order_confusion_calibration.py --input sample.txt --json
 ```
 
 输入文件按行解析。协议「校准研究」使用分隔符 `（无）` 区分标签与载荷。
@@ -50,7 +50,7 @@ python consistency_calibration_study_0c0d3783.py --input sample.txt --json
 ## 复现步骤
 
 1. 按上面的分隔符准备输入文件，每行一条样本；
-2. 运行 `python consistency_calibration_study_0c0d3783.py --input sample.txt --json`；
+2. 运行 `python multiimage_order_confusion_calibration.py --input sample.txt --json`；
 3. 记录运行环境、输入文件与完整输出；
 4. **未运行的指标不要引用**：本仓库只提供测量方法与判定规则，
    不预填任何实测数字。填入实测值前请确认对应命令与输入一致。
